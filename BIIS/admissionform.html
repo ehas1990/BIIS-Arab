@@ -223,7 +223,7 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-lg-8 col-md-8 rs-vertical-bottom mobile-mb-50">
-                              <form action="" method="post" id="form">
+                              <form action="admission_form.php" method="post" id="form">
                                 <div class="row">
                                     <div class="col-lg-12 col-md-12 rs-vertical-bottom mobile-mb-50">
                                         <h3 class="form-title">Online Admission Form</h3>
@@ -235,7 +235,7 @@
                                         <label>Name of Student</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Student Name" class="form-control">
+                                        <input type="text" placeholder="Enter Student Name" name="studentname" id="studentname" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -243,7 +243,7 @@
                                         <label>Class 2024-2025</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Class 2024-2025" class="form-control">
+                                        <input type="text" placeholder="Enter Class 2024-2025" name="academic" id="academic" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -251,7 +251,7 @@
                                         <label>Name of Father</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Father Name" class="form-control">
+                                        <input type="text" placeholder="Enter Father Name" name="fathername" id="fathername" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -259,7 +259,7 @@
                                         <label>Name of Mother</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Mother Name" class="form-control">
+                                        <input type="text" placeholder="Enter Mother Name" name="mothername" id="mothername" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -267,7 +267,7 @@
                                         <label>Phone No</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Contact Number" class="form-control">
+                                        <input type="text" placeholder="Enter Contact Number" id="Contact" name="contact" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -275,7 +275,7 @@
                                         <label>Whatsapp No.</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Whatsapp Num" class="form-control">
+                                        <input type="text" placeholder="Enter Whatsapp Number" name="Whatsapp" id="Whatsapp" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -283,7 +283,7 @@
                                         <label>Date of Birth</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Date Of The Birth" class="form-control">
+                                        <input type="text" placeholder="Enter Date Of The Birth" name="dob" id="dob" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -291,7 +291,7 @@
                                         <label>Aadhar Card No.</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Aadhar Number" class="form-control">
+                                        <input type="text" placeholder="Enter Aadhar Number" name="aadhar" id="aadhar" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -299,7 +299,7 @@
                                         <label>Address</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                       <textarea class="form-control" placeholder="Enter The Address" rows="1"></textarea>
+                                       <textarea class="form-control" placeholder="Enter The Address" name="address" id="address" rows="1"></textarea>
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -307,10 +307,10 @@
                                         <label> Need a School Van Service ?</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                      <select class="form-control" name="van">
-                                            <option selected disabled>select van Services</option>
-                                            <option>Yes</option>
-                                            <option>NO</option>
+                                      <select class="form-control" name="van" id="van">
+                                            <option value="" selected disabled>select van Services</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
                                       </select>
                                     </div>
                                 </div>
@@ -319,7 +319,7 @@
                                         <label>Vehicle Boarding Area</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Vehicle Boarding Area" class="form-control">
+                                        <input type="text" placeholder="Enter Vehicle Boarding Area" name="boardarea" id="boardarea" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -327,7 +327,7 @@
                                         <label>Distance between House to School</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter Distance between House to School" class="form-control">
+                                        <input type="text" placeholder="Enter Distance between House to School" name="Distance" id="Distance" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
@@ -335,10 +335,10 @@
                                         <label>Has Covid been vaccinated?</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                      <select class="form-control" name="van">
-                                            <option selected disabled>select Option</option>
-                                            <option>Yes</option>
-                                            <option>NO</option>
+                                      <select class="form-control" name="covid">
+                                            <option value="" selected disabled>select Option</option>
+                                            <option value="Yes">Yes</option>
+                                            <option value="No">No</option>
                                       </select>
                                     </div>
                                 </div>
@@ -347,7 +347,7 @@
                                         <label> Madrassa Class (2024-2025)</label>
                                     </div>
                                     <div class="col-lg-6 col-md-6 rs-vertical-bottom mobile-mb-50">
-                                        <input type="text" placeholder="Enter  Madrassa Class (2024-2025)" class="form-control">
+                                        <input type="text" placeholder="Enter  Madrassa Class (2024-2025)" name="Madrassa" id="Madrassa" class="form-control">
                                     </div>
                                 </div>
                                 <div class="row mt-3">
