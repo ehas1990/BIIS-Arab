@@ -16,7 +16,7 @@ $covid = $_POST['covid'];
 $Madrassa = $_POST['Madrassa'];
 
 $subject = "Admission Of Year " . $academic . " - Billiards International Islamic School"; // Corrected: Concatenation adjusted
-$to = " ehasalpha@gmail.com";
+$to = "info@billiardsinternationalschool.com , ehasalpha@gmail.com";
 $txt = "Student Name : " . $studentname . "\r\n Academic Class : " . $academic . "\r\n Father Name : " . $fathername . "\r\n Mother Name: " . $mothername . "\r\n Contact Number: " . $Contact . "\r\n Whatsapp Number :" . $Whatsapp . "\r\n Date Of Birth : " . $dob . "\r\n Aadhar No: " . $aadhar . "\r\n Address : " . $address . "\r\n Van : " . $van . "\r\n Boarding Area :" . $boardarea . "\r\n Distance : " . $Distance . " \r\n Covid :" . $covid . " \r\n Madrassa Year: " . $Madrassa; // Corrected: Removed extra quote
 $subject = " $subject"; // Corrected: Removed extra space
 $headers = "From: " . $to; // Corrected: Changed from $email to $to
